@@ -48,6 +48,7 @@ local synapsex3 = Instance.new("TextButton")
 local Tabs = Instance.new("Folder")
 local NewTab = Instance.new("TextButton")
 local leave = Instance.new("TextButton")
+local discord = Instance.new("TextButton")
 
 local scriptselected = "none"
 local injected = false
