@@ -49,6 +49,7 @@ local Tabs = Instance.new("Folder")
 local NewTab = Instance.new("TextButton")
 local leave = Instance.new("TextButton")
 local discord = Instance.new("TextButton")
+local youtube = Instance.new("ImageButton")
 
 local scriptselected = "none"
 local injected = false
@@ -730,7 +731,7 @@ leave.Parent = MainFrame
 leave.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
 leave.BackgroundTransparency = 0.800
 leave.BorderSizePixel = 0
-leave.Position = UDim2.new(0.414, 0, 0.887499988, 0)
+leave.Position = UDim2.new(0.414, 0, 0.887, 0)
 leave.Size = UDim2.new(0, 84, 0, 30)
 leave.Font = Enum.Font.Arial
 leave.Text = "leave game"
@@ -741,12 +742,12 @@ leave.MouseButton1Click:Connect(function()
 end)
 
 discord.Name = "discord"
-discord.Parent = optionspage
+discord.Parent = MainFrame
 discord.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
 discord.BackgroundTransparency = 0.800
 discord.BorderSizePixel = 0
-discord.Position = UDim2.new(0.30757343, 0, 0.191106505, 0)
-discord.Size = UDim2.new(0, 123, 0, 30)
+discord.Position = UDim2.new(0.546, 0, 0.887, 0)
+discord.Size = UDim2.new(0, 130, 0, 30)
 discord.Font = Enum.Font.Arial
 discord.Text = "Discord Invite"
 discord.TextColor3 = Color3.fromRGB(255, 255, 255)
