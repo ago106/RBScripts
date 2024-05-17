@@ -48,6 +48,7 @@ local synapsex3 = Instance.new("TextButton")
 local Tabs = Instance.new("Folder")
 local NewTab = Instance.new("TextButton")
 local leave = Instance.new("TextButton")
+local discord = Instance.new("TextButton")
 
 local scriptselected = "none"
 local injected = false
@@ -737,6 +738,29 @@ leave.TextColor3 = Color3.fromRGB(255, 255, 255)
 leave.TextSize = 14.000
 leave.MouseButton1Click:Connect(function()
     game.Players.LocalPlayer:Kick("Extra game leave!")
+end)
+
+discord.Name = "discord"
+discord.Parent = optionspage
+discord.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+discord.BackgroundTransparency = 0.800
+discord.BorderSizePixel = 0
+discord.Position = UDim2.new(0.30757343, 0, 0.391106505, 0)
+discord.Size = UDim2.new(0, 123, 0, 30)
+discord.Font = Enum.Font.Arial
+discord.Text = "Discord invite"
+discord.TextColor3 = Color3.fromRGB(255, 255, 255)
+discord.TextSize = 14.000
+discord.ZIndex = 110
+discord.MouseButton1Click:Connect(function()
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Synapse X";
+        Text = "discord.gg/yP8fZDYWzg";
+        Duration = 6.5;
+    })
+    synapsex3.Text = ".gg/yP8fZDYWzg"
+    wait(3.5)
+    synapsex3.Text = "Synapse X v4"
 end)
 
 -- Scripts:
