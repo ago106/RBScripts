@@ -447,7 +447,7 @@ title_2.BackgroundTransparency = 1.000
 title_2.Position = UDim2.new(0.00870821718, 0, 0, 0)
 title_2.Size = UDim2.new(0, 18, 0, 24)
 title_2.ZIndex = 14
-title_2.Image = "https://www.roblox.com/groups/32328930/Funny-Games-Studio#!/about"
+title_2.Image = "http://www.roblox.com/asset/?id=7641125882"
 title_2.ImageRectSize = Vector2.new(138, 167)
 
 scripthub_2.Name = "scripthub"
