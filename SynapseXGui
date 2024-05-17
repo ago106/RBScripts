@@ -430,16 +430,16 @@ Attach.MouseButton1Click:Connect(function()
         title.Text = "Synapse X - (Checking...)"
         wait(3)
         title.Text = "Synapse X - (Injecting...)"
-        wait(2.5)
-        title.Text = "Synapse X - (Checking Whitelist...)"
-        wait(5.8)
-        title.Text = "Synapse X - (Scanning...)"
         wait(10.3)
+        title.Text = "Synapse X - (Checking Whitelist...)"
+        wait(1.2)
+        title.Text = "Synapse X - (Scanning...)"
+        wait(2.5)
+        title.Text = "Synapse X - (Modded by t.me/RBScr1pts)"
+	wait(4.5)
         title.Text = "Synapse X - (Ready!)"
         wait(0.5)
-        title.Text = "Synapse X - (Modded by t.me/RBScr1pts)"
-	wait(3.5)
-        title.Text = "Synapse X - 3.1.2 "
+        title.Text = "Synapse X - 3.1.2"
         injected = true
     end
 end)
@@ -745,21 +745,21 @@ discord.Parent = optionspage
 discord.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
 discord.BackgroundTransparency = 0.800
 discord.BorderSizePixel = 0
-discord.Position = UDim2.new(0.308, 0, 0.6, 0)
+discord.Position = UDim2.new(0.30757343, 0, 0.191106505, 0)
 discord.Size = UDim2.new(0, 123, 0, 30)
 discord.Font = Enum.Font.Arial
-discord.Text = "Discord invite"
+discord.Text = "Discord Invite"
 discord.TextColor3 = Color3.fromRGB(255, 255, 255)
 discord.TextSize = 14.000
 discord.ZIndex = 110
 discord.MouseButton1Click:Connect(function()
     game.StarterGui:SetCore("SendNotification", {
         Title = "Discord Invite";
-        Text = "discord.gg/yP8fZDYWzg";
+        Text = "discord.gg/T6pjt4UyRz";
         Duration = 6.5;
     })
-    discord.Text = ".gg/yP8fZDYWzg"
-    wait(3.5)
+    discord.Text = "Invite send."
+    wait(3)
     discord.Text = "Discord Invite"
 end)
 
