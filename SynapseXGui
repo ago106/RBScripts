@@ -47,6 +47,7 @@ local synminbutt = Instance.new("ImageButton")
 local synapsex3 = Instance.new("TextButton")
 local Tabs = Instance.new("Folder")
 local NewTab = Instance.new("TextButton")
+local leave = Instance.new("TextButton")
 
 local scriptselected = "none"
 local injected = false
@@ -719,6 +720,21 @@ synapsex3.MouseButton1Click:Connect(function()
     synapsex3.Text = "Coming soon."
     wait(1)
     synapsex3.Text = "Synapse X v4"
+end)
+
+leave.Name = "options"
+leave.Parent = MainFrame
+leave.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+leave.BackgroundTransparency = 0.800
+leave.BorderSizePixel = 0
+leave.Position = UDim2.new(0.414, 0, 0.887499988, 0)
+leave.Size = UDim2.new(0, 84, 0, 30)
+leave.Font = Enum.Font.Arial
+leave.Text = "leage game"
+leave.TextColor3 = Color3.fromRGB(255, 255, 255)
+leave.TextSize = 14.000
+leave.MouseButton1Click:Connect(function()
+    game.Players.LocalPlayer:Kick("Extra game leave!")
 end)
 
 -- Scripts:
