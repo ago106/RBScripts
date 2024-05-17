@@ -47,6 +47,7 @@ local synminbutt = Instance.new("ImageButton")
 local synapsex3 = Instance.new("TextButton")
 local Tabs = Instance.new("Folder")
 local NewTab = Instance.new("TextButton")
+local leave = Instance.new("TextButton")
 
 local scriptselected = "none"
 local injected = false
@@ -323,7 +324,7 @@ title.BackgroundTransparency = 1.000
 title.Position = UDim2.new(0.330062926, 0, 0.00625000056, 0)
 title.Size = UDim2.new(0, 200, 0, 22)
 title.Font = Enum.Font.SourceSans
-title.Text = "Synapse X - 2.23.11"
+title.Text = "Synapse X - 3.1.2"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextSize = 16.000
 
@@ -386,6 +387,21 @@ options.MouseButton1Click:Connect(function()
     elseif optionspage.Visible == false then
         optionspage.Visible = true
     end
+end)
+
+leave.Name = "options"
+leave.Parent = MainFrame
+leave.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+leave.BackgroundTransparency = 0.800
+leave.BorderSizePixel = 0
+leave.Position = UDim2.new(0.414, 0, 0.887499988, 0)
+leave.Size = UDim2.new(0, 84, 0, 30)
+leave.Font = Enum.Font.Arial
+leave.Text = "leage game"
+leave.TextColor3 = Color3.fromRGB(255, 255, 255)
+leave.TextSize = 14.000
+leave.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer:Kick("Extra game leave!")
 end)
 
 scripthub.Name = "scripthub"
@@ -706,19 +722,42 @@ synapsex3.BorderSizePixel = 0
 synapsex3.Position = UDim2.new(0.30757343, 0, 0.391106505, 0)
 synapsex3.Size = UDim2.new(0, 123, 0, 30)
 synapsex3.Font = Enum.Font.Arial
-synapsex3.Text = "Synapse X v3"
+synapsex3.Text = "Synapse X v4"
 synapsex3.TextColor3 = Color3.fromRGB(255, 255, 255)
 synapsex3.TextSize = 14.000
 synapsex3.ZIndex = 110
 synapsex3.MouseButton1Click:Connect(function()
     game.StarterGui:SetCore("SendNotification", {
         Title = "Synapse X";
-        Text = "Synapse X v3 coming soon.";
+        Text = "Synapse X v4 coming soon.";
         Duration = 1;
     })
     synapsex3.Text = "Coming soon."
     wait(1)
-    synapsex3.Text = "Synapse X v3"
+    synapsex3.Text = "Synapse X v4"
+end)
+
+discord.Name = "discord"
+discord.Parent = optionspage
+discord.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+discord.BackgroundTransparency = 0.800
+discord.BorderSizePixel = 0
+discord.Position = UDim2.new(0.30757343, 0, 0.391106505, 0)
+discord.Size = UDim2.new(0, 123, 0, 30)
+discord.Font = Enum.Font.Arial
+discord.Text = "Discord invite"
+discord.TextColor3 = Color3.fromRGB(255, 255, 255)
+discord.TextSize = 14.000
+discord.ZIndex = 110
+discord.MouseButton1Click:Connect(function()
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Synapse X";
+        Text = "discord.gg/yP8fZDYWzg";
+        Duration = 6.5;
+    })
+    synapsex3.Text = ".gg/yP8fZDYWzg"
+    wait(3.5)
+    synapsex3.Text = "Synapse X v4"
 end)
 
 -- Scripts:
