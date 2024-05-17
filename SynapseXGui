@@ -435,7 +435,7 @@ Attach.MouseButton1Click:Connect(function()
         wait(0.3)
         title.Text = "Synapse X - (Ready!)"
         wait(0.5)
-        title.Text = "Synapse X - 2.23.11 (Modded by why_y0u)"
+        title.Text = "Synapse X - 2.23.11"
         injected = true
     end
 end)
