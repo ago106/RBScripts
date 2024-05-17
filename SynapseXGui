@@ -722,7 +722,7 @@ synapsex3.MouseButton1Click:Connect(function()
     synapsex3.Text = "Synapse X v4"
 end)
 
-leave.Name = "options"
+leave.Name = "leave"
 leave.Parent = MainFrame
 leave.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
 leave.BackgroundTransparency = 0.800
