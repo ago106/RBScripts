@@ -423,20 +423,22 @@ Attach.MouseButton1Click:Connect(function()
     if injected == true then
         title.Text = "Synapse X - (Already injected!)"
         wait(1)
-        title.Text = "Synapse X - 2.23.11"
+        title.Text = "Synapse X - 3.1.2"
     end
     if injected == false then
         title.Text = "Synapse X - (Checking...)"
-        wait(0.1)
+        wait(3)
         title.Text = "Synapse X - (Injecting...)"
-        wait(1.5)
+        wait(2.5)
         title.Text = "Synapse X - (Checking Whitelist...)"
-        wait(0.8)
+        wait(5.8)
         title.Text = "Synapse X - (Scanning...)"
-        wait(0.3)
+        wait(10.3)
         title.Text = "Synapse X - (Ready!)"
         wait(0.5)
-        title.Text = "Synapse X - 2.23.11"
+        title.Text = "Synapse X - (Modded by t.me/RBScr1pts)"
+	wait(3.5)
+        title.Text = "Synapse X - 3.1.2 "
         injected = true
     end
 end)
@@ -715,10 +717,10 @@ synapsex3.MouseButton1Click:Connect(function()
     game.StarterGui:SetCore("SendNotification", {
         Title = "Synapse X";
         Text = "Synapse X v4 coming soon.";
-        Duration = 1;
+        Duration = 6.5;
     })
     synapsex3.Text = "Coming soon."
-    wait(1)
+    wait(3)
     synapsex3.Text = "Synapse X v4"
 end)
 
