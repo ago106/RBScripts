@@ -50,6 +50,16 @@ local NewTab = Instance.new("TextButton")
 local leave = Instance.new("TextButton")
 local discord = Instance.new("TextButton")
 local youtube = Instance.new("ImageButton")
+local desc_2 = Instance.new("Frame")
+local descri_2 = Instance.new("TextLabel")
+local bladeball = Instance.new("TextButton")
+local adustytrip = Instance.new("TextButton")
+local buildaboat = Instance.new("TextButton")
+local infiniteyield = Instance.new("TextButton")
+local antiafk = Instance.new("TextButton")
+local arsenal = Instance.new("TextButton")
+local execute_3 = Instance.new("TextButton")
+local scriptlist = Instance.new("TextLabel")
 
 local scriptselected = "none"
 local injected = false
@@ -429,13 +439,13 @@ Attach.MouseButton1Click:Connect(function()
     end
     if injected == false then
         title.Text = "Synapse X - (Checking...)"
-        wait(3)
+        wait(3.3)
         title.Text = "Synapse X - (Injecting...)"
         wait(10.3)
         title.Text = "Synapse X - (Checking Whitelist...)"
-        wait(1.2)
+        wait(4.2)
         title.Text = "Synapse X - (Scanning...)"
-        wait(2.5)
+        wait(2.6)
         title.Text = "Synapse X - (Modded by t.me/RBScr1pts)"
 	wait(4.5)
         title.Text = "Synapse X - (Ready!)"
@@ -731,7 +741,7 @@ leave.Parent = MainFrame
 leave.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
 leave.BackgroundTransparency = 0.800
 leave.BorderSizePixel = 0
-leave.Position = UDim2.new(0.414, 0, 0.887, 0)
+leave.Position = UDim2.new(0.415, 0, 0.887, 0)
 leave.Size = UDim2.new(0, 84, 0, 30)
 leave.Font = Enum.Font.Arial
 leave.Text = "leave game"
@@ -762,6 +772,209 @@ discord.MouseButton1Click:Connect(function()
     discord.Text = "Invite send."
     wait(3)
     discord.Text = "Discord Invite"
+end)
+
+desc_2.Name = "desc_2"
+desc_2.Parent = list
+desc_2.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+desc_2.BorderSizePixel = 0
+desc_2.Position = UDim2.new(0.005, 0, 0.587, 0)
+desc_2.Size = UDim2.new(0, 115, 0, 61)
+desc_2.ZIndex = 110
+
+descri_2.Name = "descri_2"
+descri_2.Parent = desc_2
+descri_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+descri_2.BackgroundTransparency = 1.000
+descri_2.BorderSizePixel = 0
+descri_2.Position = UDim2.new(0.02, 0, 0, 0)
+descri_2.Size = UDim2.new(0, 112, 0, 61)
+descri_2.Font = Enum.Font.SourceSans
+descri_2.Text = ""
+descri_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+descri_2.TextSize = 15.000
+descri_2.TextWrapped = true
+descri_2.TextXAlignment = Enum.TextXAlignment.Left
+descri_2.TextYAlignment = Enum.TextYAlignment.Top
+descri_2.ZIndex = 125
+
+infiniteyield.Name = "infiniteyield"
+infiniteyield.Parent = list
+infiniteyield.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
+infiniteyield.BackgroundTransparency = 1.000
+infiniteyield.BorderColor3 = Color3.fromRGB(0, 0, 49)
+infiniteyield.BorderSizePixel = 0
+infiniteyield.Position = UDim2.new(-0.009, 0, 0.072, 0)
+infiniteyield.Size = UDim2.new(0, 113, 0, 18)
+infiniteyield.Font = Enum.Font.SourceSans
+infiniteyield.Text = "Infinite Yield"
+infiniteyield.TextColor3 = Color3.fromRGB(255, 255, 255)
+infiniteyield.TextSize = 14.000
+infiniteyield.TextXAlignment = Enum.TextXAlignment.Center
+infiniteyield.ZIndex = 110
+infiniteyield.MouseButton1Click:Connect(function()
+    scriptselected = "infiniteyield"
+end)
+
+antiafk.Name = "antiafk"
+antiafk.Parent = list
+antiafk.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
+antiafk.BackgroundTransparency = 1.000
+antiafk.BorderColor3 = Color3.fromRGB(0, 0, 49)
+antiafk.BorderSizePixel = 0
+antiafk.Position = UDim2.new(-0.018, 0, 0.145, 0)
+antiafk.Size = UDim2.new(0, 113, 0, 18)
+antiafk.Font = Enum.Font.SourceSans
+antiafk.Text = "Anti AFK"
+antiafk.TextColor3 = Color3.fromRGB(255, 255, 255)
+antiafk.TextSize = 14.000
+antiafk.TextXAlignment = Enum.TextXAlignment.Center
+antiafk.ZIndex = 110
+antiafk.MouseButton1Click:Connect(function()
+    scriptselected = "antiafk"
+end)
+
+buildaboat.Name = "buildaboat"
+buildaboat.Parent = list
+buildaboat.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
+buildaboat.BackgroundTransparency = 1.000
+buildaboat.BorderColor3 = Color3.fromRGB(0, 0, 49)
+buildaboat.BorderSizePixel = 0
+buildaboat.Position = UDim2.new(0.009, 0, 0.219, 0)
+buildaboat.Size = UDim2.new(0, 113, 0, 18)
+buildaboat.Font = Enum.Font.SourceSans
+buildaboat.Text = "Build A Boat Hub"
+buildaboat.TextColor3 = Color3.fromRGB(255, 255, 255)
+buildaboat.TextSize = 14.000
+buildaboat.TextXAlignment = Enum.TextXAlignment.Center
+buildaboat.ZIndex = 110
+buildaboat.MouseButton1Click:Connect(function()
+    scriptselected = "buildaboat"
+end)
+
+bladeball.Name = "bladeball"
+bladeball.Parent = list
+bladeball.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
+bladeball.BackgroundTransparency = 1.000
+bladeball.BorderColor3 = Color3.fromRGB(0, 0, 49)
+bladeball.BorderSizePixel = 0
+bladeball.Position = UDim2.new(0, 0, 0.292, 0)
+bladeball.Size = UDim2.new(0, 113, 0, 18)
+bladeball.Font = Enum.Font.SourceSans
+bladeball.Text = "Blade Ball Hub"
+bladeball.TextColor3 = Color3.fromRGB(255, 255, 255)
+bladeball.TextSize = 14.000
+bladeball.TextXAlignment = Enum.TextXAlignment.Center
+bladeball.ZIndex = 110
+bladeball.MouseButton1Click:Connect(function()
+    scriptselected = "bladeball"
+end)
+
+adustytrip.Name = "adustytrip"
+adustytrip.Parent = list
+adustytrip.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
+adustytrip.BackgroundTransparency = 1.000
+adustytrip.BorderColor3 = Color3.fromRGB(0, 0, 49)
+adustytrip.BorderSizePixel = 0
+adustytrip.Position = UDim2.new(-0.018, 0,0.365, 0)
+adustytrip.Size = UDim2.new(0, 113, 0, 18)
+adustytrip.Font = Enum.Font.SourceSans
+adustytrip.Text = "Dusty Trip Hub"
+adustytrip.TextColor3 = Color3.fromRGB(255, 255, 255)
+adustytrip.TextSize = 14.000
+adustytrip.TextXAlignment = Enum.TextXAlignment.Center
+adustytrip.ZIndex = 110
+adustytrip.MouseButton1Click:Connect(function()
+    scriptselected = "adustytrip"
+end)
+
+arsenal.Name = "arsenal"
+arsenal.Parent = list
+arsenal.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
+arsenal.BackgroundTransparency = 1.000
+arsenal.BorderColor3 = Color3.fromRGB(0, 0, 49)
+arsenal.BorderSizePixel = 0
+arsenal.Position = UDim2.new(0, 0, 0.438, 0)
+arsenal.Size = UDim2.new(0, 113, 0, 18)
+arsenal.Font = Enum.Font.SourceSans
+arsenal.Text = "Arsenal | Air Hub"
+arsenal.TextColor3 = Color3.fromRGB(255, 255, 255)
+arsenal.TextSize = 14.000
+arsenal.TextXAlignment = Enum.TextXAlignment.Center
+arsenal.ZIndex = 110
+arsenal.MouseButton1Click:Connect(function()
+    scriptselected = "arsenal"
+end)
+
+scriptlist.Name = "scriptlist"
+scriptlist.Parent = list
+scriptlist.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+scriptlist.BackgroundTransparency = 0.800
+scriptlist.Position = UDim2.new(0, 0, 0, 0)
+scriptlist.Size = UDim2.new(0, 114, 0, 18)
+scriptlist.Font = Enum.Font.SourceSans
+scriptlist.Text = "Players Script Hub"
+scriptlist.TextColor3 = Color3.fromRGB(255, 255, 255)
+scriptlist.TextSize = 15.000
+
+execute_3.Name = "execute_3"
+execute_3.Parent = list
+execute_3.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+execute_3.BackgroundTransparency = 0.800
+execute_3.BorderSizePixel = 0
+execute_3.Position = UDim2.new(0.081, 0, 0.86, 0)
+execute_3.Size = UDim2.new(0, 96, 0, 30)
+execute_3.Font = Enum.Font.Arial
+execute_3.Text = "Execute"
+execute_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+execute_3.TextSize = 14.000
+execute_3.ZIndex = 110
+execute_3.MouseButton1Click:Connect(function()
+    if injected == true then
+        if scriptselected == "infiniteyield" then
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+        end
+        if scriptselected == "antiafk" then
+            wait(0.5)local ba=Instance.new("ScreenGui")
+            local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
+            local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
+            ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
+            ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
+            ca.Position=UDim2.new(0.698610067,0,0.098096624,0)ca.Size=UDim2.new(0,170,0,52)
+            ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti AFK Script"ca.TextColor3=Color3.new(0,1,1)
+            ca.TextSize=22;da.Parent=ca
+            da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
+            da.Size=UDim2.new(0,170,0,1)_b.Parent=da
+            _b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
+            _b.Size=UDim2.new(0,170,0,21)_b.Font=Enum.Font.Arial;_b.Text="t.me/RBScr1pts"
+            _b.TextColor3=Color3.new(0,1,1)_b.TextSize=20;ab.Parent=daaaaaaaaaa
+            ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377,0)
+            ab.Size=UDim2.new(0,170,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Active"
+            ab.TextColor3=Color3.new(0,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
+            game:service'Players'.LocalPlayer.Idled:connect(function()
+            bb:CaptureController()bb:ClickButton2(Vector2.new())
+            ab.Text="Roblox Tried to kick you but we didnt let them kick you :D"wait(2)ab.Text="Status : Active"end)
+        end
+        if scriptselected == "buildaboat" then
+            loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/juywvm/-Roblox-Projects-/main/babft"))()
+        end
+        if scriptselected == "bladeball" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/BladeBall.lua"))()
+        end
+        if scriptselected == "adustytrip" then
+        	loadstring(game:HttpGet("https://raw.githubusercontent.com/artemy133563/Utilities/main/ADustyTrip",true))()
+        end
+        if scriptselected == "arsenal" then
+        	loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub/main/AirHub.lua"))()
+        end
+        if scriptselected == "none" then
+        end
+    end
+    if injected == false then
+        execute_3.Text = "Not Attached!"
+        wait(1)
+        execute_3.Text = "Execute"
+    end
 end)
 
 -- Scripts:
@@ -1182,7 +1395,7 @@ local function QQFYV_fake_script() -- tabs.Tabs
 	
 		for i, v in pairs(tabs) do
 			v.ScriptTitle.Position = tabs[i - 1] and UDim2.new(tabs[i - 1].ScriptTitle.Position.X.Scale + 0.103, 0, -0.074, 0) or UDim2.new(0, 0, -0.074, 0)
-			v.RemoveTab.Position = UDim2.new(v.ScriptTitle.Position.X.Scale + 0.067, 0, -0.074, 0)
+			v.RemoveTab.Position = UDim2.new(v.ScriptTitle.Position.X.Scale + 0.105, 0, -0.074, 0)
 		end
 	
 		script.Parent.NewTab.Position = lastTab and lastTab.RemoveTab.Position + UDim2.new(0.046, 0, 0.008, 0) or UDim2.new(0, 0, -0.066, 0)
@@ -1216,7 +1429,7 @@ local function QQFYV_fake_script() -- tabs.Tabs
 		remove.Name = "RemoveTab"
 		remove.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
 		remove.BorderSizePixel = 0
-		remove.Position = UDim2.new(titlescript.Position.X.Scale + 0.067, 0, -0.074, 0)
+		remove.Position = UDim2.new(titlescript.Position.X.Scale + 0.103, 0, -0.074, 0)
 		remove.Size = UDim2.new(0, 24, 0, 19)
 		remove.Font = Enum.Font.SourceSans
 		remove.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -1272,6 +1485,29 @@ while true do
         end
         if scriptselected == "backdoor" then
         	descri.Text = "backdoor.exe for scan place to FE access (Only place ban possible)."
+        end
+    end
+    if list.Visible == true then
+        if scriptselected == "none" then
+            descri_2.Text = ""
+        end
+        if scriptselected == "infiniteyield" then
+            descri_2.Text = "Many commands to use, but make sure to run ;equiptools for the fun"
+        end
+        if scriptselected == "antiafk" then
+            descri_2.Text = "Anti-AFK script"
+        end
+        if scriptselected == "buildaboat" then
+            descri_2.Text = "Batus's BABFT | V2 REWRITE - Build A Boat script"
+        end
+        if scriptselected == "bladeball" then
+            descri_2.Text = "The OP script for Blade Ball"
+        end
+        if scriptselected == "adustytrip" then
+            descri_2.Text = "Orion Library | Best script for A Dusty Trip"
+        end
+        if scriptselected == "arsenal" then
+            descri_2.Text = " Air Hub | Best Arsenal script (Aimbot, Esp, XyiVRot, Penis)"
         end
     end
 end
